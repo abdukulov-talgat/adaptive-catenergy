@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  min-width: $mobile-width;
+
   min-height: 100%;
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -20,7 +20,7 @@ body {
 }
 
 .page-wrapper {
-
+  min-width: $mobile-width;
 }
 
 .placeholder {
