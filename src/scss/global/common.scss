@@ -1,0 +1,29 @@
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: $mobile-width;
+  min-height: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.page-wrapper {
+
+}
+
+.placeholder {
+  height: 3000px;
+  background-color: darkcyan;
+}
