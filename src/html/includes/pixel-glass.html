@@ -1,0 +1,32 @@
+@@if(isDev === true) {
+<!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    /* По умолчанию показывается мобильный макет */
+    background-image: url("@img/pixelglass/index-320.png");
+  }
+
+  /* Планшет */
+  @media (min-width: 768px) {
+    HTML {
+      /* Планшетный макет */
+      background-image: url("@img/pixelglass/index-/768.png");
+    }
+  }
+
+  /* Десктоп */
+  @media (min-width: 1440px) {
+    HTML {
+      /* Десктопный макет */
+      background-image: url("@img/pixelglass/index-1440.png");
+    }
+  }
+</style>
+<!-- <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script> -->
+<link href="styles.css" rel="stylesheet">
+<script src="script.js"></script>
+<!-- // Pixel Glass -->
+}
