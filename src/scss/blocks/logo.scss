@@ -21,6 +21,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 202px;
+  }
+}
+
 .logo__pet {
   display: block;
   width: 33.32px;
@@ -35,6 +41,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .logo__pet {
+    width: 70.16px;
+    height: 59px;
+  }
+}
+
 .logo__word {
   display: none;
 }
@@ -42,6 +55,16 @@
 @media (min-width: $tablet-width) {
   .logo__word {
     display: block;
+    width: 101.44px;
     margin-top: 17.37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__word {
+    display: block;
+    width: 117.77px;
+    height: 21.37px;
+    margin-top: 22.11px;
   }
 }

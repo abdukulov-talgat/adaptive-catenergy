@@ -12,6 +12,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .menu {
+    justify-content: flex-end;
+  }
+}
+
 .menu__item {
   border-top: 1px solid #e6e6e6;
 }
@@ -60,6 +66,40 @@
   }
 }
 
-.menu__link--active {
+@media (min-width: $desktop-width) {
+  .menu__link {
+    padding-bottom: 8px;
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 30px;
+  }
 
+  .menu--index .menu__link {
+    color: #ffffff;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .menu__link--active {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background-color: $basic-spring;
+      content: "";
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu--index .menu__link--active {
+    &::before {
+      background-color: #ffffff;
+    }
+  }
 }

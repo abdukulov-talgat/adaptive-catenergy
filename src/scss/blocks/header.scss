@@ -1,9 +1,13 @@
 .page__header {
-
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .header {
-
+  max-width: $desktop-width;
+  margin: 0 auto;
 }
 
 
@@ -15,6 +19,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .header__nav {
+
+    padding: 53px 7.63%;
+  }
+}
 
 .header__nav--show {
   position: relative;
@@ -36,7 +46,13 @@
   }
 }
 
-.header__Logo {
+@media (min-width: $desktop-width) {
+  .header__top {
+    background-color: transparent;
+  }
+}
+
+.header__logo {
 
 }
 
@@ -157,6 +173,13 @@
     height: auto;
     transform: none;
     visibility: visible;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__menu,
+  .header__nav--show .header__menu {
+    width: 49.18%;
   }
 }
 
