@@ -1,0 +1,47 @@
+.logo {
+  display: flex;
+  color: $special-dark;
+  outline: 0;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    width: 174px;
+    justify-content: space-between;
+  }
+}
+
+.logo__pet {
+  display: block;
+  width: 33.32px;
+  height: 37.61px;
+  flex-shrink: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__pet {
+    width: 60.44px;
+    height: 49.8px;
+  }
+}
+
+.logo__word {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__word {
+    display: block;
+    margin-top: 17.37px;
+  }
+}

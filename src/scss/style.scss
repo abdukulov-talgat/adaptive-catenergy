@@ -7,3 +7,15 @@
 /*** BLOCKS ***/
 @import "./blocks/visually-hidden";
 @import "./blocks/button";
+@import "./blocks/menu";
+@import "./blocks/logo";
+@import "./blocks/header";
+
+
+.placeholder {
+  height: 3000px;
+  // margin-top: 50px;
+  background-color: darkcyan;
+  font-size: 3em;
+  line-height: 1.3;
+}

@@ -12,7 +12,8 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $status-success;
   }
 
@@ -26,7 +27,8 @@
   background-color: $basic-light;
   color: $special-dark;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $basic-neutral;
   }
 
