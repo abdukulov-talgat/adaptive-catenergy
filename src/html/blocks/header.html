@@ -19,7 +19,13 @@
       </button>
     </div>
 
-    <ul class="menu menu--index header__menu">
+
+    @@if(isIndex){
+      <ul class="menu menu--index header__menu">
+    }
+    @@if(!isIndex){
+      <ul class="menu header__menu">
+    }
       <li class="menu__item">
         <a class="menu__link menu__link--active" href="index.html">главная</a>
       </li>
