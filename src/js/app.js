@@ -1,9 +1,3 @@
-document.documentElement.classList.remove('no-js');
+import menu from './modules/menu.js'
 
-
-
-const toggler = document.querySelector('.header__toggler');
-const headerNav = document.querySelector('.header__nav');
-toggler.addEventListener('click', () => {
-    headerNav.classList.toggle('header__nav--show');
-});
+menu();
