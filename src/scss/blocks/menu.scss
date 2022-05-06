@@ -12,12 +12,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .menu {
-    justify-content: flex-end;
-  }
-}
-
 .menu__item {
   border-top: 1px solid #e6e6e6;
 }
