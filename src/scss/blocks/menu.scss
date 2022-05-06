@@ -71,6 +71,15 @@
   .menu--index .menu__link {
     color: #ffffff;
   }
+
+  .menu--index .menu__link:hover,
+  .menu--index .menu__link:focus {
+    color: rgba(#ffffff, 0.6);
+  }
+
+  .menu--index .menu__link:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }
 
 
