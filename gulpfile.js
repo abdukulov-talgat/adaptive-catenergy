@@ -51,6 +51,6 @@ const mainTasks = gulp.parallel(
 
 export const build = gulp.series(clean, mainTasks);
 export const serve = gulp.series(build, server, watch);
-export const deploy = gulp.series(build, deployPages);
+export const deploy = deployPages;
 
 export default serve;

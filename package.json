@@ -8,7 +8,7 @@
     "dev": "gulp build",
     "build": "gulp build --build",
     "serve": "gulp",
-    "deploy": "gulp deploy"
+    "deploy": "npm run build && gulp deploy"
   },
   "author": "https://github.com/abdukulov-talgat/",
   "license": "ISC",
