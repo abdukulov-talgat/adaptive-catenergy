@@ -4,20 +4,14 @@
 <body>
   @@include("./blocks/header.html", {isIndex: true, activeIndex: 0})
 
-
   <main class="page__main">
     <h1 class="visually-hidden">Catenergy - магазин товаров для кошек</h1>
-    <section class="promo page__promo">
-      <div class="promo__container">
-        <div class="promo__header">
-          <h2 class="promo__title">Функциональное<br> питание для котов</h2>
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        </div>
-        <a class="promo__button button" href="#">подобрать программу</a>
-      </div>
+    @@include("./blocks/promo.html")
+    <section class="page__offers">
+      <h2 class="visually-hidden">Наши программы</h2>
+      @@include("./blocks/offers.html")
     </section>
   </main>
-
 
   <!-- @@include("./blocks.footer.html") -->
   <div class="placeholder">TEXT TEXT TEXT</div>
