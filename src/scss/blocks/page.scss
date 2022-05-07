@@ -26,3 +26,19 @@
     margin-top: 82px;
   }
 }
+
+.page__advantages {
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__advantages {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__advantages {
+    margin-top: 71px;
+  }
+}
