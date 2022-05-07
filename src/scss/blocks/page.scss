@@ -1,0 +1,28 @@
+.page__header {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+  }
+}
+
+.page__offers {
+  padding: 0 6.25%;
+  margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__offers {
+    padding: 0 3.9%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__offers {
+    padding: 0;
+    margin-top: 82px;
+  }
+}
