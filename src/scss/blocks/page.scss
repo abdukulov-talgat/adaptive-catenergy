@@ -36,3 +36,9 @@
     margin-top: 45px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page__advantages {
+    margin-top: 71px;
+  }
+}

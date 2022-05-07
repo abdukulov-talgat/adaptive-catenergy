@@ -11,6 +11,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages {
+    max-width: 1220px;
+    padding: 0;
+    border: 0;
+  }
+}
+
 .advantages__title {
   margin: 0;
   margin-bottom: 40px;
@@ -40,6 +48,14 @@
     counter-reset: count;
     gap: 37px 18.78%;
     grid-template-columns: repeat(2, 35.31%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    justify-content: space-between;
+    gap: 40px 0;
+    grid-template-columns: repeat(4, 20.49%);
   }
 }
 
