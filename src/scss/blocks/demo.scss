@@ -18,6 +18,7 @@
   overflow: hidden;
   height: 100%;
   background-color: #eaeaea;
+  transition: width 0.3s;
 }
 
 .demo__inner--after {
@@ -62,13 +63,15 @@
   &::before {
     width: 35.66px;
     height: 6px;
+    margin-left: 0;
     background-color: $basic-spring;
     border-radius: 6px;
     content: "";
+    transition: margin-left 0.3s;
   }
 
-  &--after {
-    justify-content: flex-end;
+  &--after::before {
+    margin-left: 37.92px;
   }
 }
 
