@@ -10,8 +10,29 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__container {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .example__text {
   padding-bottom: 40px;
+}
+
+@media (min-width: $desktop-width) {
+  .example__text {
+    width: 436px;
+    padding-top: 43px;
+  }
 }
 
 .example__title {
@@ -28,6 +49,7 @@
 @media (min-width: $tablet-width) {
   .example__title {
     margin-bottom: 64px;
+    margin-bottom: 146px; //delete later
 
     font-size: 60px;
     line-height: 60px;
@@ -44,6 +66,13 @@
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__description {
+    margin-top: auto;
+    margin-bottom: 69px;
   }
 }
 

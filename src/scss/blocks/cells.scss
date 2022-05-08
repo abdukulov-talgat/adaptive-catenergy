@@ -12,6 +12,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .cells {
+    width: 83.94%;
+    gap: 50px 42px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .cells__group {
   position: relative;
   border: 1px solid $special-light;
@@ -58,6 +66,21 @@
 
     & .cells__title {
       margin-bottom: 9px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cells__group--poor {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-column: span 2;
+    justify-self: auto;
+
+    & .cells__title {
+      margin-right: 63px;
+      margin-bottom: 0;
     }
   }
 }

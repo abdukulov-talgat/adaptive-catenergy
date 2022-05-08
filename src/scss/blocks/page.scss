@@ -52,3 +52,9 @@
     margin-top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page__example {
+    margin-top: 26px;
+  }
+}
