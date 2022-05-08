@@ -46,3 +46,9 @@
 .page__example {
   margin-top: 49px;
 }
+
+@media (min-width: $tablet-width) {
+  .page__example {
+    margin-top: 0;
+  }
+}

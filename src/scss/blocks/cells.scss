@@ -5,6 +5,13 @@
   grid-template-columns: 1fr 1fr;
 }
 
+@media (min-width: $tablet-width) {
+  .cells {
+    gap: 42px;
+    grid-template-columns: repeat(2, 22.88%) 1fr;
+  }
+}
+
 .cells__group {
   position: relative;
   border: 1px solid $special-light;
@@ -22,7 +29,7 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  & .cell__title {
+  & .cells__title {
     position: static;
     padding: 0;
     color: inherit;
@@ -32,14 +39,31 @@
     transform: none;
   }
 
-  & .cell__text {
+  & .cells__text {
     padding: 0;
     font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cells__group--poor {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-top: 11px;
+    font-size: 20px;
+    grid-column: auto;
+    justify-self: end;
+
+    & .cells__title {
+      margin-bottom: 9px;
+    }
   }
 }
 
 
-.cell__title {
+.cells__title {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -51,7 +75,23 @@
   transform: translate(-50%, 66.66%);
 }
 
-.cell__text {
+@media (min-width: $tablet-width) {
+  .cells__title {
+    right: 25px;
+    left: 25px;
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 14px;
+    transform: translateY(35.71%);
+  }
+
+  .cells__title--days {
+    right: 10px;
+    left: 10px;
+  }
+}
+
+.cells__text {
   padding: 13.5px 13.5px 16.5px;
   margin: 0;
 
@@ -61,4 +101,12 @@
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .cells__text {
+    padding: 14px 14px 19px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }

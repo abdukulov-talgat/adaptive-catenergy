@@ -3,6 +3,13 @@
   background-color: #eaeaea;
 }
 
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 43px 3.9% 0;
+    background-color: transparent;
+  }
+}
+
 .example__text {
   padding-bottom: 40px;
 }
@@ -18,8 +25,25 @@
   line-height: 40px;
 }
 
+@media (min-width: $tablet-width) {
+  .example__title {
+    margin-bottom: 64px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .example__description {
   margin: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__description {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
