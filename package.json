@@ -8,7 +8,8 @@
     "dev": "gulp build",
     "build": "gulp build --build",
     "serve": "gulp",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "stylelint": "npx stylelint ./src/scss/**/*.{scss,sass}"
   },
   "author": "https://github.com/abdukulov-talgat/",
   "license": "ISC",

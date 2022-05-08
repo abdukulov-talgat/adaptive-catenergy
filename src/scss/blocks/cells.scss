@@ -1,0 +1,64 @@
+.cells {
+  display: grid;
+  margin: 0;
+  gap: 37px 32px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cells__group {
+  position: relative;
+  border: 1px solid $special-light;
+  border-radius: 3px;
+}
+
+.cells__group--poor {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  color: #000000;
+  font-family: $font-special;
+  font-size: 14px;
+  grid-column: 1 / -1;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  & .cell__title {
+    position: static;
+    padding: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-transform: inherit;
+    transform: none;
+  }
+
+  & .cell__text {
+    padding: 0;
+    font-size: inherit;
+  }
+}
+
+
+.cell__title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0 16px;
+  background-color: #eaeaea;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  transform: translate(-50%, 66.66%);
+}
+
+.cell__text {
+  padding: 13.5px 13.5px 16.5px;
+  margin: 0;
+
+  color: #000000;
+  font-family: $font-special;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
