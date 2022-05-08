@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220507214332">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220509003352">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
@@ -96,7 +96,7 @@
 </ul>
     </section>
     <section class="page__advantages">
-     <div class="advantages">
+      <div class="advantages">
   <h2 class="advantages__title">Как это работает</h2>
   <ol class="advantages__list">
     <li class="advantages__item">
@@ -128,11 +128,76 @@
   </ol>
 </div>
     </section>
+    <section class="example page__example">
+  <div class="example__container">
+
+    <div class="example__text">
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__description">
+        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+        по-прежнему спит по 16 часов в день.
+      </p>
+
+      <dl class="cells">
+        <div class="cells__group">
+          <dt class="cells__title">снижение веса</dt>
+          <dd class="cells__text">5 кг</dd>
+        </div>
+        <div class="cells__group">
+          <dt class="cells__title cells__title--days">затрачено времени</dt>
+          <dd class="cells__text">60 дней</dd>
+        </div>
+        <div class="cells__group cells__group--poor">
+          <dt class="cells__title">Затраты на питание:</dt>
+          <dd class="cells__text">15 000 РУБ.</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="example__demo demo">
+      <div class="demo__container">
+        <div class="demo__inner">
+          <picture>
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/example/before-tablet.webp 1x, img/example/before-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/example/before-tablet.png 1x, img/example/before-tablet@2x.png 2x">
+            <source type="image/webp" srcset="img/example/before-mobile.webp 1x, img/example/before-mobile@2x.webp 2x">
+            <img class="demo__img" src="img/example/before-mobile.png" srcset="img/example/before-mobile@2x.png 2x" alt="Пухлый кот до программы">
+          </picture>
+        </div>
+
+        <div class="demo__inner demo__inner--after" style="width: 0%">
+          <picture>
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/example/after-tablet.webp 1x, img/example/after-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/example/after-tablet.png 1x, img/example/after-tablet@2x.png 2x">
+            <source type="image/webp" srcset="img/example/after-mobile.webp 1x, img/example/after-mobile@2x.webp 2x">
+            <img class="demo__img" src="img/example/after-mobile.png" srcset="img/example/after-mobile@2x.png 2x" alt="Подтянутый кот после программы">
+          </picture>
+        </div>
+      </div>
+
+
+      <div class="demo__controls">
+        <button class="demo__label demo__label--before" type="button">Было</button>
+        <button class="demo__toggler" type="button" aria-label="Показать до / после"></button>
+
+        <div class="demo__slider slider">
+          <div class="slider__range">
+            <div class="slider__indicator" style="width: 0%">
+              <button class="slider__handler" type="button" aria-label="Изменить до / после"></button>
+            </div>
+          </div>
+        </div>
+
+        <button class="demo__label demo__label--after" type="button">Стало</button>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
 
   
   <div class="placeholder">TEXT TEXT TEXT</div>
 
-  <script src="js/app.min.js?_v=20220507214332"></script>
+  <script src="js/app.min.js?_v=20220509003352"></script>
 </body>
 </html>
