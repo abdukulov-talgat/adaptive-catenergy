@@ -114,6 +114,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .cells__title {
+    background-color: $basic-light;
+  }
+}
+
 .cells__text {
   padding: 13.5px 13.5px 16.5px;
   margin: 0;

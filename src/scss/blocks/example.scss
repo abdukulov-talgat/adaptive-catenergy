@@ -13,7 +13,8 @@
 @media (min-width: $desktop-width) {
   .example {
     padding: 0;
-    background-color: transparent;
+    padding-bottom: 68px;
+    background-image: linear-gradient(to top, $basic-light 72.07%, transparent 72.07%, transparent);
   }
 }
 
@@ -32,6 +33,7 @@
   .example__text {
     width: 436px;
     padding-top: 43px;
+    padding-bottom: 7px;
   }
 }
 
