@@ -1,5 +1,5 @@
 .example {
-  padding: 25px 6.25% 0;
+  padding: 25px 6.25% 45px;
   background-color: #eaeaea;
 }
 
@@ -51,7 +51,6 @@
 @media (min-width: $tablet-width) {
   .example__title {
     margin-bottom: 64px;
-    margin-bottom: 146px; //delete later
 
     font-size: 60px;
     line-height: 60px;
@@ -78,3 +77,5 @@
   }
 }
 
+.example__demo {
+}

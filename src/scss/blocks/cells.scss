@@ -1,7 +1,7 @@
 .cells {
   display: grid;
   margin: 0;
-  gap: 37px 32px;
+  gap: 34px 32px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -43,6 +43,7 @@
     color: inherit;
     font-family: inherit;
     font-size: inherit;
+    line-height: inherit;
     text-transform: inherit;
     transform: none;
   }

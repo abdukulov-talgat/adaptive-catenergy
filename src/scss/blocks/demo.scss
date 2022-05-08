@@ -1,0 +1,78 @@
+.demo {
+
+}
+
+.demo__container {
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 232px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.demo__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  background-color: #eaeaea;
+}
+
+.demo__inner--after {
+  /* For JS */
+}
+
+.demo__img {
+  display: block;
+  width: 280px;
+  height: 232px;
+  object-fit: contain;
+}
+
+.demo__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.demo__slider {
+}
+
+.demo__label {
+  color: #000000;
+  font-family: $font-special;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.demo__toggler {
+  display: flex;
+  width: 85.58px;
+  height: 14px;
+  padding: 3px 5px;
+  border: 1px solid $special-light;
+  margin: 0 19px;
+  border-radius: 6px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  &::before {
+    width: 35.66px;
+    height: 6px;
+    background-color: $basic-spring;
+    border-radius: 6px;
+    content: "";
+  }
+
+  &--after {
+    justify-content: flex-end;
+  }
+}
+
+
+.slider {
+  display: none;
+}
