@@ -5,8 +5,9 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    padding: 43px 3.9% 0;
+    padding: 43px 3.9% 58px;
     background-color: transparent;
+    background-image: linear-gradient(to top, #eaeaea 462px, transparent 462px, transparent);
   }
 }
 
@@ -20,7 +21,9 @@
 
 @media (min-width: $desktop-width) {
   .example__container {
+    display: flex;
     max-width: 1220px;
+    justify-content: space-between;
     margin: 0 auto;
   }
 }
@@ -29,11 +32,21 @@
   padding-bottom: 40px;
 }
 
+@media (min-width: $tablet-width) {
+  .example__text {
+    padding-bottom: 0;
+    margin-bottom: 85px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .example__text {
+    display: flex;
     width: 436px;
+    flex-direction: column;
     padding-top: 43px;
     padding-bottom: 7px;
+    margin-bottom: 0;
   }
 }
 
@@ -77,5 +90,9 @@
   }
 }
 
-.example__demo {
+@media (min-width: $desktop-width) {
+  .example__demo {
+    width: 592px;
+  }
 }
+

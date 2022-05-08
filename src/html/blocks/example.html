@@ -28,12 +28,8 @@
       <div class="demo__container">
         <div class="demo__inner">
           <picture>
-            <source media="(min-width: 1440px)" type="image/webp" srcset="@img/example/before-desktop.webp 1x, @img/example/before-desktop@2x.webp 2x">
             <source media="(min-width: 768px)" type="image/webp" srcset="@img/example/before-tablet.webp 1x, @img/example/before-tablet@2x.webp 2x">
-
-            <source media="(min-width: 1440px)" srcset="@img/example/before-desktop.png 1x, @img/example/before-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="@img/example/before-tablet.png 1x, @img/example/before-tablet@2x.png 2x">
-
             <source type="image/webp" srcset="@img/example/before-mobile.webp 1x, @img/example/before-mobile@2x.webp 2x">
             <img class="demo__img" src="@img/example/before-mobile.png" srcset="@img/example/before-mobile@2x.png 2x" alt="Пухлый кот до программы">
           </picture>
@@ -41,24 +37,28 @@
 
         <div class="demo__inner demo__inner--after" style="width: 0%">
           <picture>
-            <source media="(min-width: 1440px)" type="image/webp" srcset="@img/example/after-desktop.webp 1x, @img/example/after-desktop@2x.webp 2x">
             <source media="(min-width: 768px)" type="image/webp" srcset="@img/example/after-tablet.webp 1x, @img/example/after-tablet@2x.webp 2x">
-
-            <source media="(min-width: 1440px)" srcset="@img/example/after-desktop.png 1x, @img/example/after-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="@img/example/after-tablet.png 1x, @img/example/after-tablet@2x.png 2x">
-
             <source type="image/webp" srcset="@img/example/after-mobile.webp 1x, @img/example/after-mobile@2x.webp 2x">
-            <img class="demo__img" src="@img/example/after-mobile.png" srcset="@img/example/after-mobile@2x.png 2x"  alt="Подтянутый кот после программы">
+            <img class="demo__img" src="@img/example/after-mobile.png" srcset="@img/example/after-mobile@2x.png 2x" alt="Подтянутый кот после программы">
           </picture>
         </div>
       </div>
 
 
       <div class="demo__controls">
-        <div class="demo__slider slider"></div>
-        <span class="demo__label">Было</span>
-        <button class="demo__toggler" aria-label="Показать до / после"></button>
-        <span class="demo__label">Стало</span>
+        <button class="demo__label demo__label--before" type="button">Было</button>
+        <button class="demo__toggler" type="button" aria-label="Показать до / после"></button>
+
+        <div class="demo__slider slider">
+          <div class="slider__range">
+            <div class="slider__indicator" style="width: 50%">
+              <button class="slider__handler" type="button" aria-label="Изменить до / после"></button>
+            </div>
+          </div>
+        </div>
+
+        <button class="demo__label demo__label--after" type="button">Стало</button>
       </div>
     </div>
   </div>
