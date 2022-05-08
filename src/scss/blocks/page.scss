@@ -42,3 +42,19 @@
     margin-top: 71px;
   }
 }
+
+.page__example {
+  margin-top: 49px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__example {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__example {
+    margin-top: 26px;
+  }
+}
