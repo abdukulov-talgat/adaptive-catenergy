@@ -23,3 +23,19 @@ body {
   line-height: 18px;
 }
 
+
+.mobile-only {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.not-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
