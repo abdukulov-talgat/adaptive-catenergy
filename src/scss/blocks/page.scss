@@ -1,11 +1,15 @@
 .page__header {
   flex-shrink: 0;
+}
 
+.page__header--index {
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
     left: 50%;
     width: 100%;
+    padding-right: 110px;
+    padding-left: 110px;
     transform: translateX(-50%);
   }
 }
