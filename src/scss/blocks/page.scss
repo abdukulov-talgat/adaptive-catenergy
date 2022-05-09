@@ -1,4 +1,6 @@
 .page__header {
+  flex-shrink: 0;
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 0;
@@ -6,6 +8,10 @@
     width: 100%;
     transform: translateX(-50%);
   }
+}
+
+.page__main {
+  flex-grow: 1;
 }
 
 .page__offers {
@@ -57,4 +63,8 @@
   .page__example {
     margin-top: 26px;
   }
+}
+
+.page__footer {
+  flex-shrink: 0;
 }
