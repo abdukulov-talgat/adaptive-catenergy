@@ -69,6 +69,14 @@
   width: 50%;
   height: 112px;
   margin-bottom: 13px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -141,7 +149,17 @@
 .card__link {
   display: block;
   color: #222222;
+  outline: 0;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $basic-spring;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
