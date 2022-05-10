@@ -6,13 +6,20 @@
 
   <main class="page__main">
     <h1 class="visually-hidden">Catenergy - магазин товаров для кошек</h1>
-
-
+    <div class="description">
+      <h2 class="description__title">Подбор программы</h2>
+      <div class="description__text">
+        Заполните анкету, и мы подберем<br>
+        программу питания для вашего кота
+      </div>
+    </div>
+    @@include("./blocks/form.html")
+    </section>
   </main>
 
   @@include("./blocks/footer.html", {isIndex: false})
 
-
+  <!-- <div class="placeholder">TEXT TEXT TEXT</div> -->
   <script src="js/app.min.js"></script>
 </body>
 </html>
