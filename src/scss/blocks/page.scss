@@ -189,6 +189,19 @@
   }
 }
 
+.page__container--form {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
+}
+
 
 .page__title-wide {
   margin: 0;

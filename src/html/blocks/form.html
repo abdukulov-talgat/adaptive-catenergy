@@ -1,0 +1,93 @@
+<form class="form" action="https://echo.htmlacademy.ru" method="post">
+  <div class="form__row">
+    <div class="form__column">
+      <div class="form__group">
+        <label class="form__label" for="catname">ИМЯ:*</label>
+        <input class="form__input" type="text" name="catname" id="catname" required placeholder="Барсик">
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="weight">Вес (кг):*</label>
+        <input class="form__input" type="text" name="weight" id="weight" required placeholder="7">
+      </div>
+      <div class="form__group">
+        <label class="form__label" for="age">Возраст (лет):</label>
+        <input class="form__input" type="text" name="age" id="age" placeholder="7">
+      </div>
+    </div>
+    <div class="form__column form__column--border">
+      <div class="form__group">
+        <label class="control">
+          <input class="control__input" type="radio" name="program" value="skinny" checked>
+          <span class="control__mark"></span>
+          <span class="control__text">похудение</span>
+        </label>
+      </div>
+      <div class="form__group">
+        <label class="control">
+          <input class="control__input" type="radio" name="program" value="mass">
+          <span class="control__mark"></span>
+          <span class="control__text">Набор массы</span>
+        </label>
+      </div>
+      <div class="form__group">
+        <label class="control">
+          <input class="control__input" type="radio" name="program" value="advaice">
+          <span class="control__mark"></span>
+          <span class="control__text">Не знаю (Нужен ваш совет)</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="page__container page__container--form">
+    <h2 class="page__title-wide">
+      <span>Контактные данные<br class="mobile-only"> (владельца кота)</span>
+    </h2>
+  </div>
+  <div class="form__row">
+    <div class="form__group2">
+      <label class="form__label" for="email">E-mail:*</label>
+      <input class="form__input form__input--email" type="email" name="email" id="email" required placeholder="кuklachev@gmail.com">
+    </div>
+    <div class="form__group2">
+      <label class="form__label" for="phone">Телефон:*</label>
+      <input class="form__input form__input--phone" type="tel" name="phone" id="phone" required placeholder="8 (960) 900-60-90">
+    </div>
+  </div>
+  <div class="page__container page__container--form">
+    <h2 class="page__title-wide">
+      <span><label for="comments">Комментарий</label></span>
+    </h2>
+  </div>
+  <textarea class="form__textarea" name="comments" id="comments" placeholder="Расскажите обо всех повАдках кота"></textarea>
+  <div class="page__container page__container--form">
+    <h2 class="page__title-wide">
+      <span>Дополнительно</span>
+    </h2>
+  </div>
+  <div class="form__grid">
+    <label class="control">
+      <input class="control__input" type="checkbox" name="sugar" checked>
+      <span class="control__mark"></span>
+      <span class="control__text">сахарозаменитель</span>
+    </label>
+    <label class="control">
+      <input class="control__input" type="checkbox" name="water">
+      <span class="control__mark"></span>
+      <span class="control__text">питьевая вода</span>
+    </label>
+    <label class="control">
+      <input class="control__input" type="checkbox" name="milk">
+      <span class="control__mark"></span>
+      <span class="control__text">молоко</span>
+    </label>
+    <label class="control">
+      <input class="control__input" type="checkbox" name="vitamins">
+      <span class="control__mark"></span>
+      <span class="control__text">витамины</span>
+    </label>
+  </div>
+  <div class="form__box">
+    <button class="button form__submit" type="submit">отправить заявку</button>
+    <div class="form__hint">* — Обязательные поля</div>
+  </div>
+</form>
