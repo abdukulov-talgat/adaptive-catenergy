@@ -218,3 +218,25 @@
     }
   }
 }
+
+.page__wrapper {
+  padding: 0 6.25%;
+  margin-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__wrapper {
+    padding: 0 3.9%;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__wrapper {
+    display: flex;
+    max-width: 1220px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 79px auto;
+  }
+}
