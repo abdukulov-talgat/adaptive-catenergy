@@ -7,11 +7,12 @@ export default function map() {
     });
 
     const location = { lat: 59.938788257570735, lng: 30.323044719309095 };
-    const icon = '@img/map-pin-big.png';
+    let icon = document.documentElement.clientWidth < 768 ? '@img/map-pin-small.png' : '@img/map-pin-big.png'
 
     loader.load().then(() => {
         map = new google.maps.Map(document.querySelector('.footer__map'), {
             center: location,
+
             zoom: 16,
             disableDefaultUI: true,
             // mapTypeControl: false,

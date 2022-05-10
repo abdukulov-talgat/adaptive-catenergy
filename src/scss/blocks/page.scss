@@ -141,7 +141,19 @@
 }
 
 .page__additional {
+  margin-bottom: 35px;
+}
 
+@media (min-width: $tablet-width) {
+  .page__additional {
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__additional {
+    margin-bottom: 86px;
+  }
 }
 
 .page__container {
@@ -238,5 +250,47 @@
     justify-content: space-between;
     padding: 0;
     margin: 79px auto;
+  }
+}
+
+.page__gift {
+  min-height: 290px;
+  padding: 186.88px 6.25% 0;
+  margin: 34px auto 0;
+  background:
+    url("@img/icons/icons.svg#gift") no-repeat center top 58.88px / 78px 80px,
+    linear-gradient(180deg, rgba($basic-spring, 0.85), rgba($basic-spring, 0.85)),
+    url("@img/gift-bg.jpg") no-repeat center center / cover;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page__gift {
+    min-height: 200px;
+    padding: 71px 0 30px;
+    padding-left: 59.6%;
+    margin-top: 69px;
+    background:
+      url("@img/icons/icons.svg#gift") no-repeat left calc(10.87% + (80px * 0.11)) top 57px / 80px 82.57px,
+      linear-gradient(180deg, rgba($basic-spring, 0.85), rgba($basic-spring, 0.85)),
+      url("@img/gift-bg.jpg") no-repeat center 59.85% / cover;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__gift {
+    width: 245px;
+    min-height: 288.77px;
+    padding: 186.85px 20px 20px;
+    margin: 0;
+    background:
+      url("@img/icons/icons.svg#gift") no-repeat center top 55px / 80px 82.57px,
+      linear-gradient(180deg, rgba($basic-spring, 0.85), rgba($basic-spring, 0.85)),
+      url("@img/gift-bg-desktop.jpg") no-repeat center / cover;
+    text-align: center;
   }
 }

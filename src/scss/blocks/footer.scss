@@ -1,6 +1,11 @@
 .footer {
   display: flex;
   flex-direction: column;
+  background-color: $basic-light;
+}
+
+.footer--index {
+  background-color: transparent;
 }
 
 .footer__container {

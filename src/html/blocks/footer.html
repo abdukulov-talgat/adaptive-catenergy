@@ -1,4 +1,10 @@
-<footer class="footer page__footer">
+@@if(isIndex){
+  <footer class="footer footer--index page__footer">
+}
+@@if(!isIndex){
+  <footer class="footer page__footer">
+}
+
   <div class="footer__container">
     <div class="footer__invite">
       <p class="footer__dealer">приглашаем <br>к сотрудничеству дилеров!</p>

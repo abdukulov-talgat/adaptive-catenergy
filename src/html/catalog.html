@@ -18,13 +18,17 @@
       </div>
       <div class="page__wrapper">
         @@include("./blocks/goods.html")
-        <div class="" style="background: tomato; width: 245px;"></div>
+        <div class="page__gift">
+            Закажите все<br>
+            и получите чехол для<br>
+            кота в подарок!
+        </div>
       </div>
     </section>
 
   </main>
 
-  @@include("./blocks/footer.html")
+  @@include("./blocks/footer.html", {isIndex: false})
 
   <!-- <div class="placeholder">TEXT TEXT TEXT</div> -->
   <script src="js/app.min.js"></script>

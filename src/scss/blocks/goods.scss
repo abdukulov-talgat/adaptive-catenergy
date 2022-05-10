@@ -95,6 +95,10 @@
   }
 }
 
+.goods__quantity {
+  margin-right: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .goods__quantity {
     margin-right: 49px;
