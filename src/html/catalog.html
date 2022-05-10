@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru" class="page no-js">
+@@include("./includes/head.html", {title: "Cat Energy"})
+<body>
+  @@include("./blocks/header.html", {isIndex: false})
+
+  <main class="page__main">
+    <h1 class="visually-hidden">Catenergy - магазин товаров для кошек</h1>
+    <section class="page__catalog">
+      <h2 class="page__title">Каталог продукции</h2>
+      @@include("./includes/__cards.html")
+    </section>
+    <section class="page__additional">
+      <div class="page__container">
+        <h2 class="page__title-wide">
+          <span>Дополнительные товары</span>
+        </h2>
+      </div>
+      <div class="page__wrapper">
+        @@include("./blocks/goods.html")
+        <div class="page__gift">
+            Закажите все<br>
+            и получите чехол для<br>
+            кота в подарок!
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include("./blocks/footer.html", {isIndex: false})
+
+  <!-- <div class="placeholder">TEXT TEXT TEXT</div> -->
+  <script src="js/app.min.js"></script>
+</body>
+</html>

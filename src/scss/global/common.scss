@@ -1,5 +1,5 @@
 html {
-  min-height: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -11,8 +11,10 @@ html {
 
 body {
   position: relative;
+  display: flex;
   min-width: $mobile-width;
-  min-height: 100%;
+  height: 100%;
+  flex-direction: column;
   margin: 0;
   color: $special-dark;
   font-family: $font-basic;
@@ -21,7 +23,19 @@ body {
   line-height: 18px;
 }
 
-// .page-wrapper {
 
-// }
+.mobile-only {
+  display: block;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.not-mobile {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

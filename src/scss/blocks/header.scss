@@ -1,6 +1,14 @@
 .header {
+  width: 100%;
   max-width: $desktop-width;
   margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 
@@ -14,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .header__nav {
-    padding: 53px 7.63%;
+    padding: 53px 0;
   }
 }
 

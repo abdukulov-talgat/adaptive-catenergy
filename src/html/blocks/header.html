@@ -1,4 +1,9 @@
-<header class="header page__header">
+@@if(isIndex){
+  <header class="header page__header page__header--index">
+}
+@@if(!isIndex){
+  <header class="header page__header">
+}
   <nav class="header__nav">
     <div class="header__top">
       <a class="logo" href="index.html" aria-label="Логотип Cat Energy">

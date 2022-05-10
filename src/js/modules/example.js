@@ -2,7 +2,13 @@ const boxAfter = document.querySelector('.demo__inner--after');
 const slider = document.querySelector('.slider__indicator');
 const handler = document.querySelector('.slider__handler');
 
+
+
+
 export default () => {
+    if (!slider)
+        return;
+
     initMouse();
     initKeyboard();
     initToggler();
@@ -22,7 +28,7 @@ function initMouse() {
         document.removeEventListener('mousemove', onMouseMove);
     });
 
-    function onMouseMove(evt){
+    function onMouseMove(evt) {
         move(evt.movementX * mouseSmoothing);
     }
 }
