@@ -89,7 +89,6 @@
 .page__title {
   padding: 27px 6.25% 40px;
   border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
   margin: 0;
   color: #000000;
   font-family: $font-special;
@@ -115,11 +114,13 @@
 
 .page__cards {
   @include reset-list;
+  border-top: 1px solid #d9d9d9;
 }
 
 @media (min-width: $tablet-width) {
   .page__cards {
     display: grid;
+    border-top: 0;
     margin-top: 82px;
     gap: 61px 8.47%;
     grid-template-columns: repeat(2, 1fr);
@@ -294,3 +295,4 @@
     text-align: center;
   }
 }
+
