@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page no-js">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220509003352">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220511010732">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
@@ -13,8 +13,115 @@
   
 </head>
 <body>
+  
+
+  <header class="header page__header">
+
+  <nav class="header__nav">
+    <div class="header__top">
+      <a class="logo" href="index.html" aria-label="Логотип Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/icons/icons.svg#logo-pet-desktop">
+          <source media="(min-width: 768px)" srcset="img/icons/icons.svg#logo-pet-tablet">
+          <img class="logo__pet" src="img/icons/icons.svg#logo-pet-mobile" width="33" height="37">
+        </picture>
+        <svg class="logo__word" width="101" height="18">
+          <use xlink:href="img/icons/icons.svg#logo-word"></use>
+        </svg>
+      </a>
+      <svg class="header__title" width="101" height="18" aria-hidden="true">
+        <use xlink:href="img/icons/icons.svg#logo-word"></use>
+      </svg>
+      <button class="header__toggler" aria-label="Открыть меню">
+        <span></span>
+      </button>
+    </div>
 
 
-  <script src="js/app.min.js?_v=20220509003352"></script>
+    
+    
+      <ul class="menu header__menu">
+    
+      <li class="menu__item">
+        <a class="menu__link menu__link--active" href="index.html">главная</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="catalog.html">каталог продукции</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="program.html">подбор программы</a>
+      </li>
+    </ul>
+
+  </nav>
+</header>
+
+  <main class="page__main">
+    <h1 class="visually-hidden">Catenergy - магазин товаров для кошек</h1>
+
+
+  </main>
+
+  
+
+  <footer class="footer page__footer">
+
+
+  <div class="footer__container">
+    <div class="footer__invite">
+      <p class="footer__dealer">приглашаем <br>к сотрудничеству дилеров!</p>
+      <address class="footer__address">
+        ул. Большая<br>
+        Конюшенная, д. 19/8
+        <span class="footer__city">Санкт-Петербург</span>
+      </address>
+    </div>
+  </div>
+  <div class="footer__map"></div>
+
+  <div class="footer__bottom">
+    <div class="footer__center">
+      <a class="logo footer__logo" href="index.html" aria-label="Логотип Cat Energy">
+        <svg class="logo__word logo__word--footer" width="128" height="24">
+          <use xlink:href="img/icons/icons.svg#logo-word"></use>
+        </svg>
+      </a>
+      <ul class="social">
+        <li>
+          <a class="social__link" href="#" aria-label="We in vkontakte">
+            <svg width="30" height="33" aria-hidden="true">
+              <use xlink:href="img/icons/icons.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link social__link--inst" href="#" aria-label="We in instagram">
+            <svg width="30" height="33" aria-hidden="true">
+              <use xlink:href="img/icons/icons.svg#inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social__link social__link--fb" href="#" aria-label="We in facebook">
+            <svg width="30" height="33" aria-hidden="true">
+              <use xlink:href="img/icons/icons.svg#fb"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__author">
+        <span class="footer__name" id="footer__name">HTML Academy</span>
+        <a class="footer__author-link" href="#" aria-labelledby="footer__name">
+          <svg width="27" height="34" aria-hidden="true">
+            <use xlink:href="img/icons/icons.svg#logo-academy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/app.min.js?_v=20220511010732"></script>
 </body>
 </html>
